@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+ 	<title>Diary of Vivian</title>
+   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+   	<link rel="stylesheet" href="resources/css/diaryofvivian.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</h:head>
+
+<h:body>
+      <div style="float:right;padding:10px 20px;">
+        <button type="button" class="btn btn-default btn-lg" style="Background-color:lightpink;color:#F1F1F1;border-color:#F1F1F1" data-toggle="modal" data-target="#loginDlg">
+          <span class="glyphicon glyphicon-off" ></span> Anmelden 
+        </button>
+      </div>
+	<div style="Color: #FFFFFF; text-align: center;">
+		<h1>
+		<span><img style="max-width: 100px; max-height: 100px;" src="resources/images/icon_sheep.png"/></span>
+		The Diary of Vivian</h1>
+	</div>
+	
+	  <!-- Modal -->
+  <div class="modal fade" id="loginDlg" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color:lightblue;">
+        <div class="modal-header" style="background-color:lightpink;padding:35px 50px;">
+          <button type="button" style="fonts-color:white;" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="background-color:lightpink;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input style="background-color:lightpink;" type="text" class="form-control" id="usrname" placeholder="Enter email" />
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" style="background-color:lightpink;" class="form-control" id="psw" placeholder="Enter password" />
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked="checked"/>Remember me</label>
+            </div>
+              <button style="background-color:lightpink;border-color:lightpink;" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div style="background-color:lightpink;" class="modal-footer">
+          <button style="background-color:lightblue;border-color:lightblue;" type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+</h:body>
+
+</html>
